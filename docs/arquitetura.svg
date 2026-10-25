@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 720" width="1800" height="720">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
+<rect width="1800" height="720" fill="#fff"/>
+<rect x="20" y="50" width="330" height="260" rx="3" fill="#fafafa" stroke="#777" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="185" y="76" text-anchor="middle" font-size="14" font-weight="bold" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Fonte: Base dos Dados (BigQuery, US)</text>
+<rect x="390" y="50" width="1010" height="400" rx="3" fill="#fafafa" stroke="#777" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="895" y="76" text-anchor="middle" font-size="14" font-weight="bold" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Google BigQuery · projeto do grupo</text>
+<rect x="20" y="520" width="700" height="160" rx="3" fill="#fafafa" stroke="#777" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="40" y="546" text-anchor="start" font-size="14" font-weight="bold" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Streaming simulado (Google Colab)</text>
+<rect x="45" y="100" width="280" height="80" rx="3" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<text x="185" y="132" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">br_inep_avaliacao_alfabetizacao</text>
+<text x="185" y="151" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">7 tabelas</text>
+<rect x="45" y="205" width="280" height="80" rx="3" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<text x="185" y="237" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">br_bd_diretorios_brasil.municipio</text>
+<text x="185" y="256" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">1 tabela</text>
+<rect x="420" y="110" width="200" height="190" rx="3" fill="#f2e8de" stroke="#333" stroke-width="1.4"/>
+<text x="520" y="138" text-anchor="middle" font-size="17" font-weight="bold" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Bronze</text>
+<text x="520" y="166" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">cópia fiel da fonte</text>
+<text x="520" y="185" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">8 tabelas (batch)</text>
+<text x="520" y="204" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">streaming_municipio</text>
+<text x="520" y="223" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">partição diária</text>
+<rect x="790" y="110" width="200" height="190" rx="3" fill="#e9edf1" stroke="#333" stroke-width="1.4"/>
+<text x="890" y="138" text-anchor="middle" font-size="17" font-weight="bold" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Silver</text>
+<text x="890" y="166" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">tratamento e padronização</text>
+<text x="890" y="185" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">12 tabelas (batch)</text>
+<text x="890" y="204" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">streaming_municipio</text>
+<text x="890" y="223" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">WRITE_TRUNCATE</text>
+<rect x="1160" y="110" width="200" height="190" rx="3" fill="#f6efd8" stroke="#333" stroke-width="1.4"/>
+<text x="1260" y="138" text-anchor="middle" font-size="17" font-weight="bold" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Gold</text>
+<text x="1260" y="166" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">tabelas analíticas</text>
+<text x="1260" y="185" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">6 tabelas (batch)</text>
+<text x="1260" y="204" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">streaming_* (4 tabelas)</text>
+<text x="1260" y="223" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">WRITE_TRUNCATE</text>
+<rect x="520" y="360" width="840" height="64" rx="3" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<text x="940" y="386" text-anchor="middle" font-size="16" font-weight="bold" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">quality_reports</text>
+<text x="940" y="408" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">conferências · métricas por tabela · execuções · alertas · eventos rejeitados</text>
+<rect x="1530" y="150" width="240" height="100" rx="3" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<text x="1650" y="185" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Exportação Parquet e CSV</text>
+<text x="1650" y="204" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">dataset da Fase 3</text>
+<text x="1650" y="223" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">(6 tabelas da Gold)</text>
+<rect x="1530" y="355" width="240" height="54" rx="3" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<text x="1650" y="378" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Webhook do Discord</text>
+<text x="1650" y="397" text-anchor="middle" font-size="13.5" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">(alerta de falha)</text>
+<rect x="45" y="575" width="150" height="70" rx="3" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<text x="120" y="606" text-anchor="middle" font-size="14" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Produtor</text>
+<text x="120" y="625" text-anchor="middle" font-size="14" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Python</text>
+<rect x="250" y="575" width="150" height="70" rx="3" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<text x="325" y="606" text-anchor="middle" font-size="14" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Apache Kafka</text>
+<text x="325" y="625" text-anchor="middle" font-size="14" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">3 partições</text>
+<rect x="470" y="575" width="220" height="70" rx="3" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<text x="580" y="603" text-anchor="middle" font-size="14" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">Consumidor</text>
+<text x="580" y="622" text-anchor="middle" font-size="14" font-weight="normal" font-style="normal" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">micro-lotes de 25</text>
+<polyline points="195,610 250,610" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#a)"/>
+<polyline points="400,610 470,610" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#a)"/>
+<polyline points="325,140 372,140 372,170 420,170" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="349.0" y="121" width="46.0" height="18" fill="#fff"/>
+<text x="372" y="134" text-anchor="middle" font-size="13" font-weight="normal" font-style="italic" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">batch</text>
+<polyline points="325,245 372,245 372,230 420,230" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#a)"/>
+<polyline points="620,205 790,205" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="631.6" y="183" width="146.8" height="18" fill="#fff"/>
+<text x="705" y="196" text-anchor="middle" font-size="13" font-weight="normal" font-style="italic" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">validação 2.3 e 2.4</text>
+<polyline points="990,205 1160,205" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="1019.6" y="183" width="110.8" height="18" fill="#fff"/>
+<text x="1075" y="196" text-anchor="middle" font-size="13" font-weight="normal" font-style="italic" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">validação 3.11</text>
+<polyline points="1360,200 1530,200" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="1393.2" y="178" width="103.60000000000001" height="18" fill="#fff"/>
+<text x="1445" y="191" text-anchor="middle" font-size="13" font-weight="normal" font-style="italic" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">validação 4.7</text>
+<polyline points="570,300 570,360" fill="none" stroke="#222" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<polyline points="890,300 890,360" fill="none" stroke="#222" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<polyline points="1260,300 1260,360" fill="none" stroke="#222" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<text x="1280" y="338" text-anchor="start" font-size="13" font-weight="normal" font-style="italic" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">métricas</text>
+<polyline points="1360,392 1530,382" fill="none" stroke="#222" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<rect x="1422.0" y="364" width="46.0" height="18" fill="#fff"/>
+<text x="1445" y="377" text-anchor="middle" font-size="13" font-weight="normal" font-style="italic" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">falha</text>
+<polyline points="485,575 485,300" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="454.8" y="467" width="60.4" height="18" fill="#fff"/>
+<text x="485" y="480" text-anchor="middle" font-size="13" font-weight="normal" font-style="italic" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">aceitos</text>
+<polyline points="620,575 620,424" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="582.6" y="487" width="74.8" height="18" fill="#fff"/>
+<text x="620" y="500" text-anchor="middle" font-size="13" font-weight="normal" font-style="italic" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#222">inválidos</text>
+<text x="20" y="704" text-anchor="start" font-size="13" font-weight="normal" font-style="italic" style="font-family:'Liberation Sans',Arial,sans-serif;fill:#222;fill:#444">Linha contínua: fluxo de dados. Linha tracejada: métricas e alertas. Cada seta de validação indica a regra de qualidade que precisa passar antes da camada seguinte.</text>
+</svg>

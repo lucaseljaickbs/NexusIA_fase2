@@ -1,0 +1,9 @@
+# Versões impressas pela Etapa 1, pela Etapa 4.9 (matplotlib) e pela Etapa 6.0 (execução 20261024_071710).
+google-cloud-bigquery==3.46.2
+pandas==2.2.3
+pyarrow==23.0.1
+db-dtypes==1.8.0
+requests==2.32.4
+matplotlib==3.10.0
+kafka-python-ng==2.2.3
+# Runtime: Google Colab (Python 3). Kafka 3.7.0 (Scala 2.13) e Java são instalados pela Etapa 6.0.
